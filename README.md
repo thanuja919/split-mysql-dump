@@ -13,4 +13,11 @@ But if you don't know the database name or you are dealing with hundreds of data
 
 Using this script you can split the file into multiple sql files. The file name will be the database name.
 
+------------------
+Running the script
+------------------
 
+./split-mysql-dump.sh <mysql-dump-file-path>
+
+You need to execute the script with the parameter of main db dump file path. 
+Make sure the main db dump file is not in the same directory. 
