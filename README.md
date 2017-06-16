@@ -20,3 +20,5 @@ Running the script
 
 You need to execute the script with the parameter of main db dump file path. 
 Make sure the main db dump file is not in the same directory. 
+
+This script works successfully on Ubuntu 16.04 LTS.
