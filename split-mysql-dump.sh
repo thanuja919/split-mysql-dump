@@ -20,9 +20,6 @@ for f in *.tmpsql
 do
     DATABASE_LINE=`head -n1 $f`
     [[ $DATABASE_LINE =~ $REGEX_NAME ]]
-      echo "$BASH_REMATCH"     
-      echo "${BASH_REMATCH[1]}"
-      echo "${BASH_REMATCH[2]}"
     TARGET_FILE="${BASH_REMATCH[1]}.sql"
     if [ -f $TARGET_FILE ]; then
         cat $f >> $TARGET_FILE
